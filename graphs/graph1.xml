@@ -1,0 +1,28 @@
+<?xml version = "1.0"?>
+<graph>
+    <node label="0">
+        <switch>
+            <light id="0"/>
+            <light id="1"/>
+        </switch>
+    </node>
+
+    <node label="1">
+        <switch>
+            <light id="0"/>
+            <light id="1"/>
+        </switch>
+    </node>
+
+    <node label="2">
+        <switch>
+            <light id="0"/>
+            <light id="2"/>
+        </switch>
+    </node>
+
+    <edge weight="2" src="0" dst="1"/>
+    <edge weight="3" src="1" dst="2"/>
+
+
+</graph>
