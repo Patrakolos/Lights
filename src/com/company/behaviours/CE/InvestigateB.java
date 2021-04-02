@@ -9,6 +9,9 @@ public class InvestigateB extends OneShotBehaviour {
     }
     @Override
     public void action() {
-
+        // Execute E Plan
+        //Execute T plan//
+        System.out.println("Cognitive Executor ==  Investigating...");
+        this.agent.doWait(1000L);
     }
 }

@@ -1,5 +1,6 @@
 package com.company.agents;
 
+import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.FSMBehaviour;
 import com.company.behaviours.E.EndB;
@@ -13,6 +14,7 @@ public class Executor extends Agent {
     private static final String BEHAVIOUR_START= "start";
     private static final String BEHAVIOUR_INVESTIGATE = "investigate";
     private static final String BEHAVIOUR_EXECUTE = "execute";
+    public static AID IDENTIFIANT = new AID("Executor", false);
 
     public Executor(){
     }

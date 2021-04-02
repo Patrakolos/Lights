@@ -3,6 +3,7 @@ package com.company.agents;
 import com.company.behaviours.CE.EndB;
 import com.company.behaviours.CE.ExecuteB;
 import com.company.behaviours.CE.InvestigateB;
+import jade.core.AID;
 import jade.core.Agent;
 import com.company.behaviours.CE.ComputeTPlanB;
 import com.company.behaviours.CE.ComputeEPlanB;
@@ -14,7 +15,7 @@ public class CExecutor  extends Agent {
     private static final String BEHAVIOUR_EXECUTE = "execute";
     private static final String BEHAVIOUR_COMPUTETPLAN = "computeTplan";
     private static final String BEHAVIOUR_COMPUTEEPLAN = "computeEplan";
-
+    public static AID IDENTIFIANT = new AID("Cognitive Executor", false);
     public CExecutor(){
 
     }

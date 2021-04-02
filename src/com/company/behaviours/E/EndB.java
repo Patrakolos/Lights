@@ -1,5 +1,6 @@
 package com.company.behaviours.E;
 
+import com.company.behaviours.utils.AgentLogger;
 import jade.core.behaviours.OneShotBehaviour;
 import com.company.agents.Executor;
 public class EndB extends OneShotBehaviour {
@@ -9,6 +10,8 @@ public class EndB extends OneShotBehaviour {
     }
     @Override
     public void action() {
+        System.out.println("Executor < Now i can die in peace...");
+        this.agent.doDelete();
 
     }
 }
