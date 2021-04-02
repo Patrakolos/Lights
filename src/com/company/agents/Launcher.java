@@ -24,9 +24,9 @@ public class Launcher {
             agentargs[0]=1;
             agentargs[1]="ABCD";
             agentargs[2]=true;
-            ac = mc.createNewAgent("agent1", HelloAgent.class.getName(), agentargs);
+            ac = mc.createNewAgent("Executor", Executor.class.getName(), null);
+            ac2= mc.createNewAgent("Cognitive Executor",CExecutor.class.getName(),null);
             ac.start();
-            ac2= mc.createNewAgent("ticket_agent",MyAgent.class.getName(),null);
             ac2.start();
         } catch (StaleProxyException e) { }
     }
