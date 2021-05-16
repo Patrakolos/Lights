@@ -1,5 +1,6 @@
 package com.company.agents;
 
+import graph.Warehouse_Graph;
 import jade.core.Agent;
 import jade.core.Profile;
 import jade.core.ProfileImpl;
@@ -20,14 +21,16 @@ public class Launcher {
         AgentController ac;
         AgentController ac2;
         try {
+            String path = "graphs/graph1.xml";
+            Warehouse_Graph WG = new Warehouse_Graph(path);
             Object[] agentargs = new Object[3];
             agentargs[0]=1;
             agentargs[1]="ABCD";
             agentargs[2]=true;
-            ac = mc.createNewAgent("Executor", Executor.class.getName(), null);
-            ac2= mc.createNewAgent("Cognitive Executor",CExecutor.class.getName(),null);
+            ac = mc.createNewAgent("Executor", Executor.class.getName(),  new Object[] {WG});
+            ac2= mc.createNewAgent("Cognitive Executor",CExecutor.class.getName(), new Object[] {WG});
             ac.start();
             ac2.start();
-        } catch (StaleProxyException e) { }
+        } catch (Exception e) { }
     }
 }

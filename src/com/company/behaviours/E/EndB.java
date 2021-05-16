@@ -10,7 +10,7 @@ public class EndB extends OneShotBehaviour {
     }
     @Override
     public void action() {
-        System.out.println("Executor < Now i can die in peace...");
+        System.out.println("Executor < Now i can go...");
         this.agent.doDelete();
 
     }

@@ -12,6 +12,8 @@ public class ExecuteB extends OneShotBehaviour {
     public void action() {
         //Execute E plan//
         System.out.println("Cognitive Executor == Executing E Plan...");
-        this.agent.doWait(1000L);
+        this.agent.executeEplan();
+        System.out.println("Cognitive Executor == i finished!");
+
     }
 }

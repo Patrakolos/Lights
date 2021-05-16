@@ -15,7 +15,8 @@ public class EndB extends OneShotBehaviour {
         this.agent.doWait();
         ACLMessage message = this.agent.receive();
         AgentLogger.log(message);
-        System.out.println("Cognitive Executor < All that for this...");
+        System.out.println("Cognitive Executor > Lights state" + this.agent.getWG().getLights_state());
+        System.out.println("Cognitive Executor < i can go now...");
         this.agent.doDelete();
     }
 }

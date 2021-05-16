@@ -1,28 +1,44 @@
 <?xml version = "1.0"?>
 <graph>
     <node label="0">
-        <switch>
-            <light id="0"/>
-            <light id="1"/>
-        </switch>
+        <light id="0"/>
+        <light id="4"/>
     </node>
-
     <node label="1">
-        <switch>
-            <light id="0"/>
-            <light id="1"/>
-        </switch>
+        <light id="1"/>
     </node>
-
     <node label="2">
-        <switch>
-            <light id="0"/>
-            <light id="2"/>
-        </switch>
+        <light id="2"/>
+    </node>
+    <node label="3">
+        <light id="3"/>
+    </node>
+    <node label="4">
+        <light id="4"/>
+    </node>
+    <node label="5">
+        <light id="5"/>
+        <light id="1"/>
+    </node>
+    <node label="6">
+        <light id="5"/>
+    </node>
+    <node label="7">
+        <light id="5"/>
+        <light id="2"/>
     </node>
 
-    <edge weight="2" src="0" dst="1"/>
-    <edge weight="3" src="1" dst="2"/>
+    <edge weight="1" src="0" dst="4"/>
+    <edge weight="1" src="0" dst="3"/>
+    <edge weight="1" src="0" dst="2"/>
+    <edge weight="1" src="0" dst="1"/>
+    <edge weight="1" src="1" dst="2"/>
+    <edge weight="1" src="2" dst="3"/>
+    <edge weight="1" src="4" dst="7"/>
+    <edge weight="1" src="4" dst="5"/>
+    <edge weight="1" src="5" dst="6"/>
+    <edge weight="1" src="6" dst="7"/>
+    <edge weight="1" src="4" dst="6"/>
 
 
 </graph>
